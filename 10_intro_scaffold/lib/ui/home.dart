@@ -70,23 +70,20 @@ class Home extends StatelessWidget {
       //   child: Icon(Icons.call_missed),
       // ),
 
-      // // part 3 ----------------------------------------
-      // // adding bottom navigator
-      // bottomNavigationBar: BottomNavigationBar(
-      //   // passing list of bottom navigation bar items
-      //   items: const [
-      //     BottomNavigationBarItem(
-      //         // adding icon, title
-      //         icon: Icon(Icons.add),
-      //         label: "Hey"),
-      //     BottomNavigationBarItem(icon: Icon(Icons.print), title: Text("Nope")),
-      //     BottomNavigationBarItem(
-      //         icon: Icon(Icons.call_missed), title: Text("Hello"))
-      //   ],
-      //   // here printing the index of the button which we had tapped
-      //   // first button has index 1 and so on
-      //   onTap: (int i) => debugPrint("Hey Touched $i"),
-      // ),
+      // part 3 ----------------------------------------
+      // adding bottom navigator
+      bottomNavigationBar: BottomNavigationBar(
+        // passing list of bottom navigation bar items
+        items: const [
+          // adding icon, title now changed to label
+          BottomNavigationBarItem(icon: Icon(Icons.add), label: "Hey"),
+          BottomNavigationBarItem(icon: Icon(Icons.print), label: "Nope"),
+          BottomNavigationBarItem(icon: Icon(Icons.call_missed), label: "Hello")
+        ],
+        // here printing the index of the button which we had tapped
+        // first button has index 1 and so on
+        onTap: (int i) => debugPrint("Hey Touched $i"),
+      ),
     );
   }
 }
