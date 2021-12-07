@@ -33,31 +33,31 @@ class Home extends StatelessWidget {
         ],
       ),
 
-      // // Other properties
-      // // part 2 ---------------------------------------------------
-      // backgroundColor: Colors.grey.shade100,
-      // // body of the entire  scafold
-      // body: Container(
-      //   alignment: Alignment.center,
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     children: <Widget>[
-      //       const Text(
-      //         "Bonni",
-      //         style: TextStyle(
-      //             fontSize: 14.5,
-      //             fontWeight: FontWeight.w400,
-      //             color: Colors.deepOrange),
-      //       ),
-      //       // inkwell is a widget which allows to attach a ontap property
-      //       InkWell(
-      //         // we may not need to add textdirection
-      //         child: const Text("Button!"),
-      //         onTap: () => debugPrint("Button Tapped!"),
-      //       ),
-      //     ],
-      //   ),
-      // ),
+      // Other properties
+      // part 2 ---------------------------------------------------
+      backgroundColor: Colors.grey.shade300,
+      // body of the entire  scafold
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              "Abhay Singh",
+              style: TextStyle(
+                  fontSize: 14.5,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.deepOrange),
+            ),
+            // inkwell is a widget which allows to attach a ontap property
+            InkWell(
+              // we may not need to add textdirection
+              child: const Text("Button!"),
+              onTap: () => debugPrint("Button Tapped!"),
+            ),
+          ],
+        ),
+      ),
 
       // // part 4 ------------------------------------------------
       // // adding the floating button
