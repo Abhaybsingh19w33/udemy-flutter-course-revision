@@ -13,36 +13,39 @@ class Home extends StatelessWidget {
       // part 4 ----------------------------------
       // stack
       // it allows us to stack widgets on each other
-      // child: Stack(
-      //   alignment: Alignment.bottomCenter,
-      //   children: const <Widget>[
-      //     // in the output all the text are stacked on each other
-      //     Text("Hello there"),
-      //     Text("Hey Again!"),
-      //     Text("1")
-      //   ],
-      // ),
-
-      // part 3 --------------------------------------
-      // row
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Stack(
+        alignment: Alignment.bottomCenter,
         children: const <Widget>[
-          Text(
-            "Item 1",
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 12.9),
-          ),
-          Text("Item 2",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 12.9)),
-          // expand will take the only space which is left
-          Expanded(child: Text("Item 3"))
+          // in the output all the text are stacked on each other
+          Text("Hello there"),
+          Text("Hey Again!"),
+          Text("1")
         ],
       ),
     );
   }
 }
+
+//       // part 3 --------------------------------------
+//       // row
+//       child: Row(
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         children: const <Widget>[
+//           Text(
+//             "Item 1",
+//             textDirection: TextDirection.ltr,
+//             style: TextStyle(fontSize: 12.9),
+//           ),
+//           Text("Item 2",
+//               textDirection: TextDirection.ltr,
+//               style: TextStyle(fontSize: 12.9)),
+//           // expand will take the only space which is left
+//           Expanded(child: Text("Item 3"))
+//         ],
+//       ),
+//     );
+//   }
+// }
 
 //       // part 2 -------------------------------------------------
 //       // column
