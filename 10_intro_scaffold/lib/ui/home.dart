@@ -59,16 +59,16 @@ class Home extends StatelessWidget {
         ),
       ),
 
-      // // part 4 ------------------------------------------------
-      // // adding the floating button
-      // floatingActionButton: FloatingActionButton(
-      //   //  on pressed will call the assigned function when we press the floating button
-      //   onPressed: () => debugPrint("Pressed!"),
-      //   backgroundColor: Colors.lightGreen,
-      //   // tool tip
-      //   tooltip: 'Going Up!',
-      //   child: Icon(Icons.call_missed),
-      // ),
+      // part 4 ------------------------------------------------
+      // adding the floating button
+      floatingActionButton: FloatingActionButton(
+        //  on pressed will call the assigned function when we press the floating button
+        onPressed: () => debugPrint("Pressed!"),
+        backgroundColor: Colors.amberAccent.shade700,
+        // tool tip -  it like label appeared when button is pressed for long
+        tooltip: 'Going Up!',
+        child: const Icon(Icons.call_missed),
+      ),
 
       // part 3 ----------------------------------------
       // adding bottom navigator
