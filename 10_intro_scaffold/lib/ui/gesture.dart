@@ -1,23 +1,12 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
-// part 1 -----------------------------------------------
-// void main() {
-//   runApp( Scaffold(
-//       appBar:  AppBar(
-//     backgroundColor: Colors.deepOrange.shade400,
-//     title:  Text('Gestures'),
-//   )));
-// }
-
 class Guesture extends StatelessWidget {
-  final String title = "title here";
+  final String title;
   // String title = "title here";
 
-  const Guesture({Key? key, String title}) : super(key: key);
+  // const Guesture({Key? key, String? title}) : super(key: key);
   // adding constructor to our Gesture
-  // const Guesture({Key key, this.title = "title here"}) : super(key: key);
+  const Guesture({Key? key, this.title = "title here"}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +14,16 @@ class Guesture extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: const Center(
-        // every time we tap on the custom button snack bar will then appear
-        // which will have text hello gestures
-        child: CustomButton(),
-      ),
+      body: Center(
+          // every time we tap on the custom button snack bar will then appear
+          // which will have text hello gestures
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const <Widget>[
+          CustomButton(),
+          Text("Press button to see Snackbar on bottom"),
+        ],
+      )),
     );
   }
 }
@@ -39,7 +33,6 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // part 2---------------------------------------------------------
     // adding gesturesDetector widget
     return GestureDetector(
       onTap: () {
@@ -51,7 +44,7 @@ class CustomButton extends StatelessWidget {
               hours: 0,
               minutes: 0,
               seconds: 0,
-              milliseconds: 4100,
+              milliseconds: 1000,
               microseconds: 0),
         );
 
